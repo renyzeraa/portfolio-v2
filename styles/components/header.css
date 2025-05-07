@@ -1,0 +1,23 @@
+.header {
+  color: #222;
+  padding: 1rem 2.25rem;
+}
+
+.header > .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.header > .navbar > .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+}
+
+.header > .navbar > .nav-links > li {
+  padding: 0.5rem 1rem;
+  background: red;
+}

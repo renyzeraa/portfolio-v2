@@ -1,0 +1,19 @@
+@import './reset.css';
+@import './color.css';
+
+/*
+ * Components
+ */
+@import './components/header.css';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+}
+
+body {
+  line-height: 1.5;
+}
