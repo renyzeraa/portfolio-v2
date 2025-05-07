@@ -26,24 +26,44 @@
 
 <body>
   <header class="header">
-    <nav class="navbar content">
+    <nav role="navigation" class="navbar content">
       <div class="logo">
         <span>Renan Silva</span>
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-          <a href="#projetos">Projetos</a>
-        </li>
-        <li>
-          <a href="#contato">Contato</a>
-        </li>
-      </ul>
+      <div id="menuToggle">
+        <input type="checkbox" id="menuCheckbox" aria-checked="true" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul class="nav-links" id="menu">
+          <li>
+            <a href="#about">
+              <label for="menuCheckbox">About</label>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <label for="menuCheckbox">Projects</label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="menuCheckbox">Experience</label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="menuCheckbox">Stack</label>
+            </a>
+          </li>
+          <li>
+            <a>
+              <label for="menuCheckbox">Contact</label>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 

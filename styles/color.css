@@ -1,4 +1,11 @@
 :root {
   --background-primary: #000319;
   --text-primary: #f0f0f0;
+
+  --background-white-primary: #f0f0f0;
+  --text-white-primary: #000319;
+
+  --orange: #d14329;
+
+  --gradient-hover: linear-gradient(45deg, #1b2555, #202c63, #131b41, #28387f);
 }
