@@ -5,15 +5,27 @@
  * Components
  */
 @import './components/header.css';
+@import './components/footer.css';
 
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
   font-feature-settings: 'kern' 1;
   font-kerning: normal;
 }
 
 body {
+  font-family: 'Work Sans', sans-serif;
+
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+
   line-height: 1.5;
+}
+
+.content {
+  max-width: 1280px;
+  margin: auto;
 }
