@@ -1,0 +1,16 @@
+#about {
+}
+
+#about h1 {
+  font-size: 4.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 4px;
+  padding: 1rem;
+  line-height: 1;
+}
+
+#about h1:hover {
+  animation: bounceScale 4s ease-in-out infinite;
+}

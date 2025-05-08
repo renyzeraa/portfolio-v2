@@ -8,6 +8,11 @@
 @import './components/header.css';
 @import './components/footer.css';
 
+/*
+* Sections
+*/
+@import './sections/about.css';
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,5 +33,20 @@ body {
 
 .content {
   max-width: 1280px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.main-content {
+  margin: 32px 0;
+}
+
+.main-content section {
+  padding: 24px;
+}
+
+.title-content {
+  color: var(--orange);
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  text-align: center;
 }
