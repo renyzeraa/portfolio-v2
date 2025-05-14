@@ -1,4 +1,5 @@
 #about {
+  height: 700px;
 }
 
 #about h1 {
@@ -9,8 +10,95 @@
   letter-spacing: 4px;
   padding: 1rem;
   line-height: 1;
+  margin-bottom: 2rem;
+  animation: floatSpace1 5s ease-in-out infinite;
+  position: relative;
 }
 
-#about h1:hover {
-  animation: bounceScale 4s ease-in-out infinite;
+#about .about-description {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+#about .about-description > p {
+  width: 49%;
+  color: var(--text-secondary-300);
+}
+
+#about .video-background {
+  pointer-events: none;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200dvw;
+  z-index: 1;
+  opacity: 0.3;
+  filter: blur(3px);
+}
+
+#about .video-background video {
+  pointer-events: none;
+  object-position: center;
+  width: 100%;
+  object-fit: cover;
+  margin-left: -50dvw;
+}
+
+#about * {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+#about .about-image {
+  margin: 32px auto;
+  position: relative;
+}
+
+#about .about-image .photo img {
+  margin: 0 auto;
+}
+
+#about .about-image .float{
+  position: absolute;
+}
+
+#about .about-image .react{
+  top: 42px;
+  animation: floatSpace2 7s ease-out infinite;
+  left: 25%;
+}
+
+#about .about-image .html{
+  bottom: 20px;
+  right: 15%;
+  animation: floatSpace1 5s ease-out infinite;
+}
+
+#about .about-image .css{
+  bottom: 20px;
+  left: 15%;
+  animation: floatSpace3 7s ease infinite;
+}
+
+#about .about-image .node{
+  bottom: 145px;
+  right: 20%;
+  animation: floatSpace4 6s ease infinite;
+}
+
+#about .about-image .js{
+  bottom: 145px;
+  left: 22%;
+  animation: floatSpace1 8s ease infinite;
+}
+
+#about .about-image .typescript{
+  top: 30px;
+  right: 27%;
+  animation: floatSpace6 5s ease infinite;
 }

@@ -29,6 +29,7 @@ body {
   color: var(--text-primary);
 
   line-height: 1.5;
+  overflow-x: hidden !important;
 }
 
 .content {
@@ -37,7 +38,7 @@ body {
 }
 
 .main-content {
-  margin: 32px 0;
+  margin: 64px 0 32px;
 }
 
 .main-content section {

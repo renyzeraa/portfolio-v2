@@ -2,6 +2,17 @@
   --background-primary: #000319;
   --text-primary: #f0f0f0;
 
+  --text-secondary-50:  #f5f7fa;
+  --text-secondary-100: #e4eaf1;
+  --text-secondary-200: #c9d4e3;
+  --text-secondary-300: #aebed5;
+  --text-secondary-400: #93a8c7;
+  --text-secondary-500: #7892b9;
+  --text-secondary-600: #5e7697;
+  --text-secondary-700: #485b73;
+  --text-secondary-800: #333f4f;
+  --text-secondary-900: #1f242d;
+
   --background-white-primary: #f0f0f0;
   --text-white-primary: #000319;
 
