@@ -1,8 +1,12 @@
 :root {
   --background-primary: #000319;
+  --background-primary-900: #020731;
+  --background-primary-800: #181828;
   --text-primary: #f0f0f0;
 
-  --text-secondary-50:  #f5f7fa;
+  --shadow-05: rgba(255, 255, 255, 0.05);
+
+  --text-secondary-50: #f5f7fa;
   --text-secondary-100: #e4eaf1;
   --text-secondary-200: #c9d4e3;
   --text-secondary-300: #aebed5;
@@ -12,6 +16,8 @@
   --text-secondary-700: #485b73;
   --text-secondary-800: #333f4f;
   --text-secondary-900: #1f242d;
+
+  --text-purple-200: #9a9aff;
 
   --background-white-primary: #f0f0f0;
   --text-white-primary: #000319;
