@@ -60,59 +60,59 @@
   object-fit: contain;
 }
 
-#about .about-image .float{
+#about .about-image .float {
   position: absolute;
 }
 
-#about .about-image .react{
+#about .about-image .react {
   top: 42px;
   animation: floatSpace2 7s ease-out infinite;
   left: 25%;
 }
 
-#about .about-image .html{
+#about .about-image .html {
   bottom: 20px;
   right: 15%;
   animation: floatSpace1 5s ease-out infinite;
 }
 
-#about .about-image .css{
+#about .about-image .css {
   bottom: 20px;
   left: 15%;
   animation: floatSpace3 7s ease infinite;
 }
 
-#about .about-image .node{
+#about .about-image .node {
   bottom: 145px;
   right: 20%;
   animation: floatSpace4 6s ease infinite;
 }
 
-#about .about-image .js{
+#about .about-image .js {
   bottom: 145px;
   left: 22%;
   animation: floatSpace1 8s ease infinite;
 }
 
-#about .about-image .typescript{
+#about .about-image .typescript {
   top: 30px;
   right: 27%;
   animation: floatSpace6 5s ease infinite;
 }
 
-#about .about-image .jest{
+#about .about-image .jest {
   top: 48px;
   right: 10%;
   animation: floatSpace5 7s ease-in infinite;
 }
 
-#about .about-image .php{
+#about .about-image .php {
   top: 48px;
   left: 10%;
   animation: floatSpace3 5s ease-in infinite;
 }
 
-#about .about-image .next{
+#about .about-image .next {
   top: 140px;
   left: 8%;
   animation: floatSpace3 5s ease-in infinite;
@@ -120,31 +120,31 @@
   border-radius: 50%;
 }
 
-#about .about-image .sass{
+#about .about-image .sass {
   top: 148px;
   right: 8%;
   animation: floatSpace3 5s ease-in infinite;
 }
 
-#about .about-image .tailwind{
+#about .about-image .tailwind {
   bottom: 68px;
   right: 4%;
   animation: floatSpace1 6s ease-in infinite;
 }
 
-#about .about-image .postgresql{
+#about .about-image .postgresql {
   bottom: 72px;
   left: 3%;
   animation: floatSpace2 6s ease-in infinite;
 }
 
-#about .about-image .git{
+#about .about-image .git {
   bottom: 10px;
   left: 4%;
   animation: floatSpace4 7s ease-in-out infinite;
 }
 
-#about .about-image .docker{
+#about .about-image .docker {
   bottom: 10px;
   right: 4%;
   animation: floatSpace5 5s ease-in-out infinite;
@@ -194,6 +194,10 @@
   #about .video-background video {
     height: 910px;
   }
+
+  #about h1 {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 690px) {
@@ -201,16 +205,16 @@
     height: 935px;
   }
 
-  #about .about-image .php{
+  #about .about-image .php {
     top: 38px;
     left: 6%;
   }
 
-  #about .about-image .react{
+  #about .about-image .react {
     top: 28px;
   }
 
-  #about .about-image .js{
+  #about .about-image .js {
     left: 16%;
   }
 
@@ -218,12 +222,16 @@
     top: 125px;
     left: 5%;
   }
+
+  #about h1 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 610px) {
-  #about .about-image .typescript{
+  #about .about-image .typescript {
     top: 20px;
-    right: 20%; 
+    right: 20%;
   }
   #about .about-image .jest {
     top: 58px;
@@ -272,6 +280,10 @@
     bottom: 42px;
     left: 18%;
   }
+
+  #about h1 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 565px) {
@@ -282,12 +294,18 @@
 
 @media (max-width: 530px) {
   #about h1 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
-  #about .about-image .php{
+  #about .about-image .php {
     top: 28px;
     left: 4%;
+  }
+}
+
+@media (max-width: 510px) {
+  #about h1 {
+    font-size: 2.25rem;
   }
 }
 
@@ -295,7 +313,7 @@
   #about .video-background video {
     height: 1020px;
   }
-  #about .about-image .typescript{
+  #about .about-image .typescript {
     top: 18px;
     right: 18%;
   }
@@ -311,7 +329,7 @@
     height: 40px;
   }
 
-  #about .about-image .html{
+  #about .about-image .html {
     bottom: 44px;
   }
 
@@ -319,17 +337,9 @@
     max-height: 340px;
     margin-bottom: 0;
   }
-}
 
-@media (max-width: 420px) {
   #about h1 {
-    font-size: 2.75rem;
-  }
-}
-
-@media (max-width: 390px) {
-  #about h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -340,7 +350,7 @@
 }
 
 @media (max-width: 340px) {
-   #about .video-background video {
+  #about .video-background video {
     height: 1085px;
   }
 }

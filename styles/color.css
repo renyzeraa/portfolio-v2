@@ -5,6 +5,8 @@
   --text-primary: #f0f0f0;
 
   --shadow-05: rgba(255, 255, 255, 0.05);
+  --shadow-10: rgba(255, 255, 255, 0.1);
+  --shadow-20: rgba(255, 255, 255, 0.2);
 
   --text-secondary-50: #f5f7fa;
   --text-secondary-100: #e4eaf1;

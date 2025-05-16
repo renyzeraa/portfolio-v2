@@ -22,7 +22,7 @@
 
   <link rel="stylesheet" href="./styles/global.css">
 
-  <title>Renan Silva - FullStack Developer</title>
+  <title>Renan Silva - Desenvolvedor Fullstack</title>
 </head>
 
 <body>
@@ -30,6 +30,18 @@
     <nav role="navigation" class="navbar content">
       <div class="logo">
         <span>Renan Silva</span>
+      </div>
+      <div class="language-selector">
+        <span>Lang: </span>
+        <button type="button" data-lang="pt-BR" class="lang-btn">
+          <img src="./assets/icon-br-flag.svg" width="30" height="25" alt="Bandeira Brasil" />
+        </button>
+        <button type="button" data-lang="en-US" class="lang-btn">
+          <img src="./assets/icon-us-flag.svg" width="30" height="25" alt="Bandeira Estados Unidos" />
+        </button>
+        <button type="button" data-lang="es-ES" class="lang-btn">
+          <img src="./assets/icon-es-flag.svg" width="30" height="25" alt="Bandeira Espanha" />
+        </button>
       </div>
       <div id="menuToggle">
         <input type="checkbox" id="menuCheckbox" aria-checked="true" />
@@ -40,27 +52,27 @@
         <ul class="nav-links" id="menu">
           <li>
             <a href="#about">
-              <label for="menuCheckbox">About</label>
+              <label data-i18n="about" for="menuCheckbox"></label>
             </a>
           </li>
           <li>
             <a href="#projects">
-              <label for="menuCheckbox">Projects</label>
+              <label data-i18n="projects" for="menuCheckbox"></label>
             </a>
           </li>
           <li>
             <a href="#experience">
-              <label for="menuCheckbox">Experience</label>
+              <label data-i18n="experience" for="menuCheckbox"></label>
             </a>
           </li>
           <li>
             <a href="#stack">
-              <label for="menuCheckbox">Stack</label>
+              <label data-i18n="stack" for="menuCheckbox"></label>
             </a>
           </li>
           <li>
             <a href="#contact">
-              <label for="menuCheckbox">Contact</label>
+              <label data-i18n="contact" for="menuCheckbox"></label>
             </a>
           </li>
         </ul>
@@ -71,10 +83,10 @@
   <div class="main-content">
     <main class="content">
       <section id="about">
-        <h1>FullStack Developer</h1>
+        <h1 data-i18n="areaOfActivity"></h1>
         <div class="about-description">
-          <p>Sou desenvolvedor fullstack com 4 anos de experiência criando aplicações web seguras, performáticas e centradas no usuário. Tenho base sólida em APIs REST, bancos de dados e otimização de sistemas. Atuo com proatividade em todas as etapas do projeto, sempre buscando entregar soluções de qualidade com foco em resultado.</p>
-          <p>Encaro cada projeto como se fosse meu. Tenho visão de dono, trabalho bem sob pressão e sou movido por melhorias constantes. Cuido da performance, segurança e usabilidade com atenção aos detalhes. Meu objetivo é sempre entregar aplicações robustas e com ótima experiência para o cliente.</p>
+          <p data-i18n="aboutDescription1"></p>
+          <p data-i18n="aboutDescription2"></p>
         </div>
         <div class="about-image">
           <div class="photo">
@@ -100,17 +112,16 @@
         <div class="video-background">
           <video height="720" autoplay muted loop playsinline>
             <source src="./assets/programming-space-red.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos HTML5.
           </video>
         </div>
       </section>
 
       <section id="projects">
-        <h1 class="title-content">Projects</h1>
+        <h1 data-i18n="projects" class="title-content"></h1>
         <div class="projects-content">
           <div class="cards-container">
             <div class="card">
-              <img class="image-project" src="https://private-user-images.githubusercontent.com/101990719/406438335-d3c8c180-957c-4cd1-a1ba-3a493426e128.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDczNDcyMzMsIm5iZiI6MTc0NzM0NjkzMywicGF0aCI6Ii8xMDE5OTA3MTkvNDA2NDM4MzM1LWQzYzhjMTgwLTk1N2MtNGNkMS1hMWJhLTNhNDkzNDI2ZTEyOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNVQyMjA4NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOTIwNjA3NzNkZWU5NzkyYzVlYTM5OGFlNWIzMzA1MjMxNjU4ZjU2MWM5YTlmYWYxNDlkMDFmMTQ3MGM5YmU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2D3bI5ACddc7ZeVGavgmPE1sVrhYax5jEoAwbGltr3k" alt="Preview Site" width="1920" height="1080" />
+              <img class="image-project" src="https://github.com/user-attachments/assets/d3c8c180-957c-4cd1-a1ba-3a493426e128" alt="Preview Site" width="1920" height="1080" />
               <h3>Improving system</h3>
               <p>
                 Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.
@@ -120,13 +131,13 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" width="20" height="20" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="20" height="20" />
               </div>
-              <a href="#">
-                Check Live Site ↗
+              <a data-i18n="checkLinkSite" href="#">
+
               </a>
             </div>
 
             <div class="card">
-              <img class="image-project" src="https://private-user-images.githubusercontent.com/101990719/406438335-d3c8c180-957c-4cd1-a1ba-3a493426e128.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDczNDcyMzMsIm5iZiI6MTc0NzM0NjkzMywicGF0aCI6Ii8xMDE5OTA3MTkvNDA2NDM4MzM1LWQzYzhjMTgwLTk1N2MtNGNkMS1hMWJhLTNhNDkzNDI2ZTEyOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDUxNVQyMjA4NTNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOTIwNjA3NzNkZWU5NzkyYzVlYTM5OGFlNWIzMzA1MjMxNjU4ZjU2MWM5YTlmYWYxNDlkMDFmMTQ3MGM5YmU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2D3bI5ACddc7ZeVGavgmPE1sVrhYax5jEoAwbGltr3k" alt="Preview Site" width="1920" height="1080" />
+              <img class="image-project" src="https://github.com/user-attachments/assets/d3c8c180-957c-4cd1-a1ba-3a493426e128" alt="Preview Site" width="1920" height="1080" />
               <h3>Improving system</h3>
               <p>
                 Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.
@@ -136,8 +147,7 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" width="20" height="20" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="20" height="20" />
               </div>
-              <a href="#">
-                Check Live Site ↗
+              <a data-i18n="checkLinkSite" href="#">
               </a>
             </div>
           </div>
@@ -145,21 +155,21 @@
       </section>
 
       <section id="experience">
-        <h1 class="title-content">Experience</h1>
+        <h1 data-i18n="experience" class="title-content"></h1>
       </section>
 
       <section id="stack">
-        <h1 class="title-content">Stacks</h1>
+        <h1 data-i18n="stack" class="title-content"></h1>
       </section>
 
       <section id="contact">
-        <h1 class="title-content">Contact me</h1>
+        <h1 data-i18n="contact" class="title-content"></h1>
       </section>
     </main>
   </div>
 
   <footer class="footer">
-    <p>&copy; 2025 Renan Silva. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Renan Silva. <span data-i18n="footerDescription"></span></p>
   </footer>
 
   <button type="button" id="scrollToTopButton" class="back-to-top" aria-label="Scroll to top">

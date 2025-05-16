@@ -1,7 +1,40 @@
+.header .logo {
+  flex: 1;
+}
+
+.header .language-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.header .language-selector span {
+  font-size: 0.8rem;
+  color: var(--text-secondary-200);
+}
+
+.header .lang-btn {
+  padding: 0.15rem;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: grayscale(1);
+}
+
+.header .lang-btn:hover {
+  background: var(--shadow-10);
+}
+
+.header .lang-btn.active {
+  background: var(--shadow-20);
+  filter: grayscale(0);
+}
+
 .header > .navbar {
   padding: 1rem 24px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: auto;
 }
@@ -13,12 +46,16 @@
 }
 
 .header > .navbar .nav-links > li {
-  padding: 0.5rem 1rem;
   border-radius: 8px;
   font-weight: 500;
+  display: flex;
 }
 
-.header > .navbar .nav-links > *,
+.header > .navbar .nav-links > li > a {
+  padding: 0.5rem 1rem;
+}
+
+.header > .navbar .nav-links > li > a,
 #menuToggle label[for='menuCheckbox'] {
   cursor: pointer !important;
 }
@@ -35,6 +72,10 @@
 }
 
 @media (max-width: 768px) {
+  .header .language-selector {
+    margin-right: 4rem;
+  }
+
   .header > .navbar .nav-links > li:hover {
     background: none;
   }
@@ -49,10 +90,10 @@
     display: block;
 
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 20px;
+    right: 26px;
 
-    z-index: 1;
+    z-index: 1000;
 
     -webkit-user-select: none;
     user-select: none;
