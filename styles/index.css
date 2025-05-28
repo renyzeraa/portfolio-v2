@@ -1,6 +1,6 @@
-@import './reset.css';
-@import './color.css';
-@import './animation.css';
+@import './globals/reset.css';
+@import './globals/color.css';
+@import './globals/animation.css';
 
 /*
  * Components

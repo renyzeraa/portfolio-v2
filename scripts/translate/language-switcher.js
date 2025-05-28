@@ -1,5 +1,7 @@
 import { translations } from './translations.js';
 
+const LANGUAGE_CHANGE_EVENT = 'languageChanged';
+
 export function initLanguageSwitcher() {
   const languageButtons = document.querySelectorAll('.lang-btn');
   const defaultLang = 'pt-BR';
@@ -23,6 +25,8 @@ export function initLanguageSwitcher() {
 
       // Salva a preferência do usuário
       localStorage.setItem('language', lang);
+
+      dispatchLanguageChangeEvent(lang);
     });
   });
 }
@@ -35,5 +39,23 @@ function setLanguage(lang) {
     if (translations[lang] && translations[lang][key]) {
       element.textContent = translations[lang][key];
     }
+  });
+}
+
+export function getLanguage() {
+  return localStorage.getItem('language') || 'pt-BR'
+}
+
+function dispatchLanguageChangeEvent(lang) {
+  const event = new CustomEvent(LANGUAGE_CHANGE_EVENT, {
+    detail: { language: lang }
+  });
+  document.dispatchEvent(event);
+}
+
+// Método para adicionar listener de mudança de idioma
+export function onLanguageChange(callback) {
+  document.addEventListener(LANGUAGE_CHANGE_EVENT, (event) => {
+    callback(event.detail.language);
   });
 }
