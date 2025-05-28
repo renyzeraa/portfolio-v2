@@ -1,0 +1,101 @@
+.experience-section {
+  background-color: #0f1024;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-title {
+  color: #f35b04;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: 'SuaFonteBold', sans-serif;
+}
+
+.experience-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.experience-card {
+  background-color: #1c1e3d;
+  border-radius: 15px;
+  padding: 25px;
+  color: #ffffff;
+  width: 45%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  margin-bottom: 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.card-logo {
+  max-height: 40px;
+  width: auto;
+}
+
+/* Se usar a alternativa para IPM Sistemas com ícone e texto: */
+.card-logo-icon {
+  max-height: 30px;
+  margin-right: 10px;
+}
+.card-company-name {
+  font-weight: bold;
+  color: #e7453c;
+}
+
+.card-job-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'SuaFonteMedium', sans-serif;
+}
+
+.card-description {
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #c0c0c0;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-achievements {
+  margin-top: auto;
+}
+
+.card-achievement-item {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #e0e0e0;
+}
+
+.card-achievement-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .experience-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
