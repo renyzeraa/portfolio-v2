@@ -41,5 +41,13 @@ export const projects = [
     libs: ['react', 'javascript', 'css', 'vite', 'node', 'express', 'sqlite', 'knex'],
     linkSite: 'https://rocket-notes-aplication.netlify.app/',
     linkRepo: 'https://github.com/renyzeraa/rocketnotes-frontend'
+  },
+  {
+    title: 'BeautySalon - Landing Page',
+    description: translationsProjects[getLanguage()][5].description,
+    image: 'https://github.com/user-attachments/assets/54e3dae0-78f5-44b4-b24d-8ac93f3a4813',
+    libs: ['javascript', 'css', 'html'],
+    linkSite: 'https://renyzeraa.github.io/LP-beautysalon/',
+    linkRepo: 'https://github.com/renyzeraa/LP-beautysalon'
   }
 ]

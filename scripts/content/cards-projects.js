@@ -26,13 +26,19 @@ export function initCardsProjects() {
   projects.forEach(project => {
     const card = document.createElement('div');
     card.className = 'card';
+    card.title = project.title;
+
+    const cardImg = document.createElement('div');
+    cardImg.className = 'card-img';
 
     const img = document.createElement('img');
     img.className = 'image-project';
     img.src = project.image;
     img.alt = 'Preview Site';
-    img.width = 1920;
-    img.height = 1080;
+    img.width = 307;
+    img.height = 211;
+    img.draggable = false;
+    cardImg.appendChild(img);
 
     const title = document.createElement('h3');
     title.textContent = project.title;
@@ -49,6 +55,7 @@ export function initCardsProjects() {
       icon.alt = lib;
       icon.width = 20;
       icon.height = 20;
+      icon.title = lib;
       techIcons.appendChild(icon);
     });
 
@@ -57,7 +64,7 @@ export function initCardsProjects() {
     link.target = '_blank';
     link.setAttribute('data-i18n', 'checkLinkSite');
 
-    card.appendChild(img);
+    card.appendChild(cardImg);
     card.appendChild(title);
     card.appendChild(description);
     card.appendChild(techIcons);

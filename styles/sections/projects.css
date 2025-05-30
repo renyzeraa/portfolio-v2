@@ -1,4 +1,4 @@
-.cards-container {
+#projects .cards-container {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -6,8 +6,12 @@
   flex-wrap: wrap;
 }
 
-.card {
-  background-color: var(--background-primary-800);
+#projects .cards-container .card {
+  background: linear-gradient(
+    325deg,
+    var(--background-primary-800) 0%,
+    var(--background-primary-600) 120%
+  );
   border-radius: 20px;
   width: 340px;
   height: 100%;
@@ -16,16 +20,35 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 0 15px var(--shadow-05);
+  box-shadow: 0 0 15px var(--shadow-10);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card img {
-  width: 100%;
-  max-width: 360px;
-  max-height: 200px;
+#projects .cards-container .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 20px var(--text-purple-200);
 }
 
-.image-project {
+#projects .cards-container .card .card-img {
+  padding: 8px 8px 0 8px;
+  max-width: 380px;
+  max-height: 210px;
+  overflow: hidden;
+  transition: padding 0.3s;
+}
+
+#projects .cards-container .card .card-img:hover {
+  padding: 0px;
+}
+
+#projects .cards-container .card .card-img .image-project {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+#projects .cards-container .image-project {
   transform: rotate(-2deg);
   margin-bottom: 15px;
   border-radius: 10px;
@@ -33,37 +56,37 @@
   transition: transform 0.3s, filter 0.3s;
 }
 
-.image-project:hover {
+#projects .cards-container .image-project:hover {
   filter: grayscale(0);
   transform: rotate(0deg);
 }
 
-.card h3 {
+#projects .cards-container .card h3 {
   font-size: 1.2rem;
   font-weight: 700;
   margin: 10px 0;
 }
 
-.card p {
+#projects .cards-container .card p {
   font-size: 0.9rem;
   color: var(--text-primary);
   margin-bottom: 20px;
   min-height: 140px;
 }
 
-.tech-icons {
+#projects .cards-container .tech-icons {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.tech-icons img {
+#projects .cards-container .tech-icons img {
   width: 24px;
   height: 24px;
   border-radius: 0px;
 }
 
-.card a {
+#projects .cards-container .card a {
   text-decoration: none;
   color: var(--text-purple-200);
   font-weight: 500;
@@ -73,6 +96,39 @@
   transition: color 0.3s;
 }
 
-.card a:hover {
+#projects .cards-container .card a:hover {
   color: var(--text-primary);
+}
+
+#projects .more-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-primary-800);
+  padding: 8px;
+  font-size: 0.9rem;
+  gap: 8px;
+  max-width: 180px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+}
+
+#projects .more-projects:hover {
+  background-color: var(--background-primary-700);
+}
+
+@media (max-width: 768px) {
+  #projects .cards-container .card {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px var(--text-purple-200);
+  }
+  #projects .cards-container .card .card-img {
+    padding: 0px;
+  }
+  #projects .cards-container .image-project {
+    filter: grayscale(0);
+    transform: rotate(0deg);
+  }
 }

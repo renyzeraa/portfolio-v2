@@ -1,100 +1,84 @@
-.experience-section {
-  background-color: #0f1024;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.experience-title {
-  color: #f35b04;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  font-family: 'SuaFonteBold', sans-serif;
-}
-
-.experience-cards-container {
+#experience .experience-cards-container {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
+  margin-top: 32px;
 }
 
-.experience-card {
-  background-color: #1c1e3d;
+#experience .experience-card {
+  background: linear-gradient(
+    155deg,
+    var(--background-primary-900) 0%,
+    var(--background-primary-700) 90%
+  );
   border-radius: 15px;
   padding: 25px;
-  color: #ffffff;
+  color: var(--text-white);
   width: 45%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px var(--shadow-dark-20);
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card-header {
-  margin-bottom: 20px;
-  height: 50px;
+#experience .experience-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--shadow-30);
+}
+
+#experience .card-header {
+  margin-bottom: 8px;
+  height: 60px;
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
-.card-logo {
-  max-height: 40px;
-  width: auto;
+#experience .card-header h2 {
+  font-size: 1.2em;
 }
 
-/* Se usar a alternativa para IPM Sistemas com ícone e texto: */
-.card-logo-icon {
-  max-height: 30px;
-  margin-right: 10px;
-}
-.card-company-name {
-  font-weight: bold;
-  color: #e7453c;
-}
-
-.card-job-title {
+#experience .card-job-title {
   font-size: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 10px;
-  font-family: 'SuaFonteMedium', sans-serif;
 }
 
-.card-description {
+#experience .card-description {
   font-size: 0.9em;
   line-height: 1.6;
-  color: #c0c0c0;
+  color: var(--text-secondary-200);
   margin-bottom: 20px;
   flex-grow: 1;
 }
 
-.card-achievements {
+#experience .card-achievements {
   margin-top: auto;
 }
 
-.card-achievement-item {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+#experience .card-achievement-item {
+  background-color: var(--shadow-dark-10);
+  border: 1px solid var(--shadow-10);
   border-radius: 8px;
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 0.9em;
-  color: #e0e0e0;
+  color: var(--text-secondary-200);
 }
 
-.card-achievement-item:last-child {
+#experience .card-achievement-item:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
-  .experience-cards-container {
+  #experience .experience-cards-container {
     flex-direction: column;
     align-items: center;
   }
-  .experience-card {
+  #experience .experience-card {
     width: 80%;
     margin-bottom: 20px;
   }
