@@ -1,31 +1,15 @@
 import { onLanguageChange } from "../translate/language-switcher.js";
 import { translationsProjects } from "../translate/translations-projects.js";
-import { projects } from "./projects.js";
+import { projects, libsIcons } from "./projects.js";
 
-const libs = {
-  'react': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-  'javascript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-  'node': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-  'express': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-  'sqlite': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
-  'vite': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
-  'tailwind': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-  'typescript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
-  'prisma': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
-  'docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg',
-  'postgresql': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-  'fastify': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg',
-  'knex': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/knexjs/knexjs-original.svg',
-  'next': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-  'html': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
-  'css': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'
-}
-
-export function initCardsProjects() {
+export function initCardsProjects(newLanguage) {
   const containerCards = document.querySelector('#projects > .cards-container');
-  projects.forEach(project => {
-    const card = document.createElement('div');
-    card.className = 'card';
+  const listCards = document.createElement('ul');
+  listCards.classList.add('slide');
+
+  projects.forEach((project, index) => {
+    const card = document.createElement('li');
+    card.className = 'card ';
     card.title = project.title;
 
     const cardImg = document.createElement('div');
@@ -44,14 +28,14 @@ export function initCardsProjects() {
     title.textContent = project.title;
 
     const description = document.createElement('p');
-    description.textContent = project.description;
+    description.textContent = newLanguage ? translationsProjects[newLanguage][index].description : project.description;
 
     const techIcons = document.createElement('div');
     techIcons.className = 'tech-icons';
 
     project.libs.forEach(lib => {
       const icon = document.createElement('img');
-      icon.src = libs[lib];
+      icon.src = libsIcons[lib];
       icon.alt = lib;
       icon.width = 20;
       icon.height = 20;
@@ -70,60 +54,24 @@ export function initCardsProjects() {
     card.appendChild(techIcons);
     card.appendChild(link);
 
-    containerCards.appendChild(card);
+    listCards.appendChild(card);
   });
+  const arrowNav = document.createElement('div');
+  arrowNav.className = 'arrow-nav';
+  arrowNav.innerHTML = `
+    <button class="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path></svg>
+    </button>
+    <button class="next">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
+    </button>
+  `;
+  containerCards.appendChild(listCards);
+  containerCards.appendChild(arrowNav);
 }
 
 onLanguageChange((newLanguage) => {
-  projects = projects.map((project, index) => {
-    return {
-      ...project,
-      description: translationsProjects[newLanguage][index].description
-    };
-  });
-
   const containerCards = document.querySelector('#projects > .cards-container');
   containerCards.innerHTML = ''; // Limpa os cards existentes
-
-  projects.forEach(project => {
-    const card = document.createElement('div');
-    card.className = 'card';
-
-    const img = document.createElement('img');
-    img.className = 'image-project';
-    img.src = project.image;
-    img.alt = 'Preview Site';
-    img.width = 1920;
-    img.height = 1080;
-
-    const title = document.createElement('h3');
-    title.textContent = project.title;
-
-    const description = document.createElement('p');
-    description.textContent = project.description;
-
-    const techIcons = document.createElement('div');
-    techIcons.className = 'tech-icons';
-
-    project.libs.forEach(lib => {
-      const icon = document.createElement('img');
-      icon.src = libs[lib];
-      icon.alt = lib;
-      icon.width = 20;
-      icon.height = 20;
-      techIcons.appendChild(icon);
-    });
-
-    const link = document.createElement('a');
-    link.href = project.linkSite;
-    link.setAttribute('data-i18n', 'checkLinkSite');
-
-    card.appendChild(img);
-    card.appendChild(title);
-    card.appendChild(description);
-    card.appendChild(techIcons);
-    card.appendChild(link);
-
-    containerCards.appendChild(card);
-  });
+  initCardsProjects(newLanguage);
 });
