@@ -23,10 +23,44 @@
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+#experience .experience-card {
+  position: relative;
+  z-index: 1;
+}
+#experience .experience-card::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #000080, #000040, #000080, #000040);
+  background-size: 400% 400%;
+  animation: rotateGradiente 3s linear infinite;
+  box-shadow: 0 0 15px #050b2f, 0 0 25px #061463, 0 0 35px #030a47;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-#experience .experience-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px var(--shadow-30);
+#experience .experience-card:hover::after {
+  opacity: 1;
+}
+
+#experience .experience-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #070c22, #0e1874, #121264, #0a0631);
+  z-index: -1;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#experience .experience-card:hover::before {
+  opacity: 1;
 }
 
 #experience .card-header {

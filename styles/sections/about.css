@@ -30,7 +30,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 200dvw;
+  width: 100dvw;
   z-index: 1;
   opacity: 0.3;
   filter: blur(3px);
@@ -41,7 +41,6 @@
   object-position: center;
   width: 100%;
   object-fit: cover;
-  margin-left: -50dvw;
 }
 
 #about * {

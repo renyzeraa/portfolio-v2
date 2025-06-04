@@ -1,9 +1,19 @@
-#projects .cards-container {
+#projects .cards-container.slide-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#projects .cards-container.slide-wrapper .slide {
+  display: flex;
+}
+
+#projects .cards-container .slide {
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 40px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 #projects .cards-container .card {
@@ -24,7 +34,7 @@
   backdrop-filter: blur(10px);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
+#projects .cards-container .card.active,
 #projects .cards-container .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 5px 20px var(--text-purple-200);
@@ -100,6 +110,34 @@
   color: var(--text-primary);
 }
 
+#projects .cards-container .arrow-nav {
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 95%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#projects .cards-container .arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: var(--orange);
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.3s;
+  filter: brightness(0.5);
+}
+
+#projects .cards-container .arrow-nav button:hover {
+  filter: brightness(1);
+}
+
 #projects .more-projects {
   display: flex;
   justify-content: center;
@@ -117,6 +155,24 @@
 
 #projects .more-projects:hover {
   background-color: var(--background-primary-700);
+}
+
+@media (max-width: 1000px) {
+  #projects .cards-container .slide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  #projects .cards-container .arrow-nav {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  #projects .cards-container .slide .card {
+    min-width: 80vw;
+  }
 }
 
 @media (max-width: 768px) {
