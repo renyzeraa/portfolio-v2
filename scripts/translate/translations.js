@@ -8,7 +8,7 @@ export const translations = {
     contact: 'Contato',
     // sobre
     areaOfActivity: 'Desenvolvedor Fullstack',
-    aboutDescription1: 'Sou desenvolvedor fullstack com 4 anos de experiência criando aplicações web seguras, performáticas e centradas no usuário. Tenho base sólida em APIs REST, bancos de dados e otimização de sistemas. Atuo com proatividade em todas as etapas do projeto, sempre buscando entregar soluções de qualidade com foco em resultado.',
+    aboutDescription1: 'Sou desenvolvedor fullstack com 4 anos de experiência, criando aplicações web seguras, performáticas e centradas no usuário. Tenho base sólida em APIs REST, bancos de dados e otimização de sistemas. Atuo com proatividade em todas as etapas do projeto, sempre buscando entregar soluções de qualidade com foco em resultado.',
     aboutDescription2: 'Encaro cada projeto como se fosse meu. Tenho visão de dono, trabalho bem sob pressão e sou movido por melhorias constantes. Cuido da performance, segurança e usabilidade com atenção aos detalhes. Meu objetivo é sempre entregar aplicações robustas e com ótima experiência para o cliente.',
     // projetos
     checkLinkSite: 'Confira o site ↗',

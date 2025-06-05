@@ -1,5 +1,6 @@
 import { onLanguageChange } from "../translate/language-switcher.js";
 import { translationsProjects } from "../translate/translations-projects.js";
+import { translations } from "../translate/translations.js";
 import { projects, libsIcons } from "./projects.js";
 
 export function initCardsProjects(newLanguage) {
@@ -46,6 +47,7 @@ export function initCardsProjects(newLanguage) {
     const link = document.createElement('a');
     link.href = project.linkSite;
     link.target = '_blank';
+    link.textContent = translations[newLanguage || 'pt-BR'].checkLinkSite;
     link.setAttribute('data-i18n', 'checkLinkSite');
 
     card.appendChild(cardImg);
