@@ -1,12 +1,3 @@
-#projects .cards-container.slide-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-#projects .cards-container.slide-wrapper .slide {
-  display: flex;
-}
-
 #projects .cards-container .slide {
   display: flex;
   justify-content: center;
@@ -81,7 +72,7 @@
   font-size: 0.9rem;
   color: var(--text-primary);
   margin-bottom: 20px;
-  min-height: 140px;
+  min-height: 160px;
 }
 
 #projects .cards-container .tech-icons {
@@ -155,24 +146,6 @@
 
 #projects .more-projects:hover {
   background-color: var(--background-primary-700);
-}
-
-@media (max-width: 1000px) {
-  #projects .cards-container .slide {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    position: relative;
-  }
-
-  #projects .cards-container .arrow-nav {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  #projects .cards-container .slide .card {
-    min-width: 80vw;
-  }
 }
 
 @media (max-width: 768px) {

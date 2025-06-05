@@ -10,7 +10,7 @@ export const translationsProjects = {
       description: 'App que une a técnica de Pomodoro com a realização de exercícios físicos para quem passa muito tempo na frente do computador.'
     },
     {
-      description: 'Desenvolvimento completo de landing page moderna para empresa especializada em funilaria e pintura automotiva. Inclui seções de serviços, portfólio de trabalhos realizados, formulário de contato integrado e otimização SEO para maior visibilidade local.'
+      description: 'Landing page completa e moderna para empresa especializada em funilaria e pintura automotiva. Inclui seções de serviços, portfólio de trabalhos realizados, formulário de contato integrado e otimização SEO.'
     },
     {
       description: 'Aplicação frontend para salvar notas úteis de avaliações de filmes, com API própria.'
