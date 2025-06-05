@@ -21,6 +21,7 @@
 #about .about-description > p {
   width: 49%;
   color: var(--text-secondary-300);
+  text-align: justify;
 }
 
 #about .video-background {

@@ -15,18 +15,17 @@
     var(--background-primary-700) 90%
   );
   border-radius: 15px;
-  padding: 25px;
+  overflow: hidden;
   color: var(--text-white);
   width: 45%;
   box-shadow: 0 4px 15px var(--shadow-dark-20);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s, box-shadow 0.3s;
-}
-#experience .experience-card {
   position: relative;
   z-index: 1;
 }
+
 #experience .experience-card::after {
   content: '';
   position: absolute;
@@ -64,11 +63,13 @@
 }
 
 #experience .card-header {
+  padding: 24px;
   margin-bottom: 8px;
-  height: 60px;
   display: flex;
   align-items: center;
   gap: 4px;
+  background-color: var(--background-white-primary);
+  max-height: 80px;
 }
 
 #experience .card-header h2 {
@@ -79,6 +80,8 @@
   font-size: 1.4em;
   font-weight: 500;
   margin-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #experience .card-description {
@@ -87,10 +90,14 @@
   color: var(--text-secondary-200);
   margin-bottom: 20px;
   flex-grow: 1;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #experience .card-achievements {
   margin-top: auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 #experience .card-achievement-item {
