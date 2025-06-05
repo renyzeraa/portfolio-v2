@@ -56,6 +56,7 @@ export function initCardsProjects(newLanguage) {
 
     listCards.appendChild(card);
   });
+
   const arrowNav = document.createElement('div');
   arrowNav.className = 'arrow-nav';
   arrowNav.innerHTML = `
@@ -63,15 +64,16 @@ export function initCardsProjects(newLanguage) {
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M168.49,199.51a12,12,0,0,1-17,17l-80-80a12,12,0,0,1,0-17l80-80a12,12,0,0,1,17,17L97,128Z"></path></svg>
     </button>
     <button class="next">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><path d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z"></path></svg>
     </button>
   `;
+
   containerCards.appendChild(listCards);
   containerCards.appendChild(arrowNav);
 }
 
 onLanguageChange((newLanguage) => {
   const containerCards = document.querySelector('#projects > .cards-container');
-  containerCards.innerHTML = ''; // Limpa os cards existentes
+  containerCards.innerHTML = '';
   initCardsProjects(newLanguage);
 });
