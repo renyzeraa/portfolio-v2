@@ -4,6 +4,7 @@ import { initLanguageSwitcher } from './translate/language-switcher.js'
 import { initCardsProjects } from './content/cards-projects.js'
 import { initCardsExperience } from './content/cards-experience.js'
 import { initSlideProjects } from './animations/slide.js'
+import { initContactArea } from './content/contact.js'
 
 // Inicializa o botão de voltar ao topo com classe show quando o usuário rola a página
 initBackToTop()
@@ -19,3 +20,5 @@ initSlideProjects()
 initCardsExperience()
 // Inicializa o switcher de idiomas
 initLanguageSwitcher()
+// Inicializa o formulário de contato
+initContactArea()

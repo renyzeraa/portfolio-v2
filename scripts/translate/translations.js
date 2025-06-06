@@ -13,6 +13,14 @@ export const translations = {
     // projetos
     checkLinkSite: 'Confira o site ↗',
     moreProjects: 'Mais Projetos',
+    // contato
+    formSendMessage: 'Enviar Mensagem',
+    formLabelMessage: 'Mensagem',
+    formLabelEmail: 'Email',
+    formLabelName: 'Nome',
+    formPlaceholderMessage: 'Digite sua mensagem aqui.',
+    formPlaceholderEmail: 'exemplo@email.com',
+    formPlaceholderName: 'Digite seu nome.',
     // footer
     footerDescription: 'Todos os direitos reservados.'
   },
@@ -30,6 +38,14 @@ export const translations = {
     // projetos
     checkLinkSite: 'Check Live Site ↗',
     moreProjects: 'More Projects',
+    // contato
+    formSendMessage: 'Send Message',
+    formLabelMessage: 'Message',
+    formLabelEmail: 'Email',
+    formLabelName: 'Name',
+    formPlaceholderMessage: 'Type your message here.',
+    formPlaceholderEmail: 'example@email.com',
+    formPlaceholderName: 'Type your name here.',
     // footer
     footerDescription: 'All rights reserved.'
   },
@@ -47,6 +63,14 @@ export const translations = {
     // projetos
     checkLinkSite: 'Ver sitio ↗',
     moreProjects: 'Más Proyectos',
+    // contato
+    formSendMessage: 'Enviar Mensaje',
+    formLabelMessage: 'Mensaje',
+    formLabelEmail: 'Email',
+    formLabelName: 'Nombre',
+    formPlaceholderMessage: 'Escribe tu mensaje aquí.',
+    formPlaceholderEmail: 'ejemplo@email.com',
+    formPlaceholderName: 'Escribe tu nombre aquí.',
     // footer
     footerDescription: 'Todos los derechos reservados.'
   }

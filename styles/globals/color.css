@@ -39,7 +39,14 @@
   --text-white-primary: #000319;
 
   --orange: #d14329;
+  --red: #e7453c;
   --red-ipm-sistemas: #e7453c;
 
+  --shadow-red: hsla(0, 84.2%, 60.2%, 0.4);
+
   --gradient-hover: linear-gradient(45deg, #1b2555, #202c63, #131b41, #28387f);
+
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(222.2, 84%, 4.9%);
 }
