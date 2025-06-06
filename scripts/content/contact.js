@@ -4,11 +4,27 @@ export function initContactArea() {
   form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const isNameValid = validateField('name', 'O campo Nome é obrigatório.');
-    const isEmailValid = validateEmailField();
-    const isMessageValid = validateField('message', 'O campo Mensagem é obrigatório.');
+    const name = validateField('name', 'O campo Nome é obrigatório.');
+    const email = validateEmailField();
+    const message = validateField('message', 'O campo Mensagem é obrigatório.');
 
-    if (isNameValid && isEmailValid && isMessageValid) {
+    if (name && email && message) {
+      const data = {
+        name,
+        email,
+        message,
+      }
+
+      // simulação de envio de dados
+      new Promise((resolve) => {
+        setLoading(true);
+        console.log('Enviando dados:', data);
+        setTimeout(() => {
+          resolve();
+          setLoading(false);
+        }, 2000);
+      })
+
       form.reset(); // Limpa o formulário
       clearAllErrors(); // Limpa todas as mensagens de erro
     }
@@ -18,12 +34,17 @@ export function initContactArea() {
     const field = form.querySelector(`#${fieldId}`);
     const value = field.value.trim();
 
+    if (fieldId === 'name' && value.split(' ').length < 2) {
+      setErrorFor(field, 'Por favor, insira seu nome completo.');
+      return false;
+    }
+
     if (value === '') {
       setErrorFor(field, errorMessage);
       return false;
     } else {
       clearErrorFor(field);
-      return true;
+      return value;
     }
   }
 
@@ -39,7 +60,7 @@ export function initContactArea() {
       return false;
     } else {
       clearErrorFor(emailField);
-      return true;
+      return emailValue;
     }
   }
 
@@ -67,5 +88,16 @@ export function initContactArea() {
   function isEmailValid(email) {
     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
+  }
+
+  function setLoading(isLoading) {
+    const submitButton = form.querySelector('button[type="submit"]');
+    if (isLoading) {
+      submitButton.disabled = true;
+      submitButton.classList.add('loading');
+    } else {
+      submitButton.disabled = false;
+      submitButton.classList.remove('loading');
+    }
   }
 }

@@ -59,10 +59,47 @@
   text-align: center;
   width: 100%;
   filter: brightness(0.7);
+  position: relative;
 }
 
-#contact .contact-form .form-button:hover {
+#contact .contact-form .form-button:focus,
+#contact .contact-form .form-button:hover,
+#contact .contact-form .form-button.loading {
   filter: brightness(1.1);
+}
+
+#contact .contact-form .form-button:disabled,
+#contact .contact-form .form-button.loading {
+  cursor: not-allowed;
+}
+
+#contact .contact-form .form-button.loading {
+  color: transparent;
+  background-color: var(--red-ipm-sistemas);
+}
+
+#contact .contact-form .form-button.loading::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translate(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--text-secondary-50);
+  border-radius: 50%;
+  border-right-color: transparent;
+  animation: spin 1s linear infinite;
+  right: 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
 }
 
 #contact .contact-form .error-message {
