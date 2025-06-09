@@ -1,49 +1,72 @@
 export const translationsExperience = {
   'pt-BR': {
     magazord: {
-      description: 'Atuo na criação e modernização de plataformas digitais utilizando microfrontends, React.js e Next.js, entregando reduções expressivas de mais de 50% nos custos de armazenamento através da otimização de bundles e assegurando experiências de usuário impecáveis com sites 100% responsivos e carregamento ultrarrápido. Minha especialidade é transformar a performance do site, resolver gargalos críticos e desenvolver layouts personalizados que não apenas fortalecem a identidade da marca, mas também maximizam a conversão e impulsionam diretamente o aumento de acessos e vendas, tudo isso gerenciado com metodologias ágeis para garantir entregas de alta qualidade e dentro do prazo.',
+      description: 'Desenvolvedor Frontend com experiência em e-commerce, focado na arquitetura e desenvolvimento de componentes microfrontend para otimizar a modularidade do sistema. Atuo na modernização de sistemas legados, migrando-os para tecnologias como React, Next.js e Tailwind CSS. Minhas responsabilidades incluem a otimização contínua da performance, a implementação de layouts responsivos e a análise da experiência do usuário, garantindo a qualidade do código com testes e práticas ágeis.',
       job: 'Desenvolvedor Frontend Pleno',
       achievements: [
-
+        'Redução de +50% no Tamanho dos Bundles JS',
+        'Melhoria de +30% no Tempo de Carregamento da Página',
+        'Implementação de Microfrontends para Modularidade e Escalabilidade',
+        'Migração de Sistemas Legados para Tecnologias Modernas como React e Next.js',
+        'Desenvolvimento de Interfaces Responsivas e Acessíveis',
       ]
     },
     ipmSistemas: {
-      description: 'Como Desenvolvedor Frontend na IPM Sistemas, ele atua diretamente na estruturação e desenvolvimento do sistema Atende.net, garantindo sua escalabilidade e alta performance para a gestão pública. É responsável por analisar e implementar novos desenvolvimentos com soluções inovadoras e eficientes, criando e mantendo layouts 100% responsivos e acessíveis que proporcionam uma experiência inclusiva e otimizada em qualquer dispositivo. Sua expertise abrange desde a manutenção proativa de código legado, corrigindo bugs e assegurando a estabilidade do sistema, até o planejamento e pesquisa de novas funcionalidades que impulsionam a evolução contínua do produto. Desenvolve soluções Full-Stack eficientes utilizando JavaScript Vanilla, SASS, AJAX e PHP, com forte aplicação de Orientação a Objetos, para criar interfaces dinâmicas e priorizar uma experiência de usuário superior, impactando diretamente a qualidade e a usabilidade das soluções da IPM Sistemas para a administração pública.',
+      description: 'Desenvolvedor com experiência na evolução do sistema de gestão pública Atende.net, atuando do backend ao frontend para garantir performance e escalabilidade. Fui responsável por criar soluções inovadoras e eficientes, desenvolver interfaces responsivas e acessíveis, e otimizar a experiência do usuário. Com foco em código limpo e estável usando JavaScript, PHP e SASS, contribui ativamente para a modernização e a qualidade contínua do produto.',
       job: 'Desenvolvedor Frontend Junior',
       achievements: [
-
+        'Agilizado a usabilidade nas prefeituras com interfaces intuitivas',
+        'Implementado melhorias de performance que reduziram o tempo de resposta do sistema',
+        'Desenvolvimento de Componentes Reutilizáveis',
+        'Aumento da Estabilidade do Sistema',
+        'Consulta Dinâmica personalizada para cada cliente',
       ]
     }
   },
   'en-US': {
     magazord: {
-      description: 'I specialize in creating and modernizing digital platforms using microfrontends, React.js, and Next.js, delivering significant storage cost reductions of over 50% through bundle optimization and ensuring flawless user experiences with 100% responsive sites and ultra-fast loading times. My expertise lies in transforming site performance, resolving critical bottlenecks, and developing custom layouts that not only strengthen brand identity but also maximize conversion and directly drive increased traffic and sales, all managed with agile methodologies to ensure high-quality, on-time delivery.',
+      description: 'Front-End Developer with e-commerce experience, focused on the architecture and development of microfrontend components to optimize system modularity. I work on modernizing legacy systems, migrating them to technologies like React, Next.js, and Tailwind CSS. My responsibilities include continuous performance optimization, implementing responsive layouts, and analyzing the user experience, ensuring code quality through testing and agile practices.',
       job: 'Mid Frontend Developer',
       achievements: [
-
+        'Reduced JS Bundle Size by over 50%',
+        'Improved Page Load Time by over 30%',
+        'Implemented Microfrontends for Modularity and Scalability',
+        'Migrated Legacy Systems to Modern Technologies like React and Next.js',
+        'Developed Responsive and Accessible Interfaces',
       ]
     },
     ipmSistemas: {
-      description: 'As a Frontend Developer at IPM Sistemas, he directly engages in the structuring and development of the Atende.net system, ensuring its scalability and high performance for public administration. He is responsible for analyzing and implementing new developments with innovative and efficient solutions, creating and maintaining 100% responsive and accessible layouts that provide an inclusive and optimized experience on any device. His expertise ranges from proactive legacy code maintenance, correcting bugs and ensuring system stability, to the planning and research of new functionalities that drive the continuous evolution of the product. He develops efficient Full-Stack solutions using JavaScript Vanilla, SASS, AJAX, and PHP, with a strong application of Object-Oriented Programming, to create dynamic interfaces and prioritize a superior user experience, directly impacting the quality and usability of IPM Sistemas solutions for public administration.',
-      job: 'Junior Frontend Developer',
+      description: 'Developer with experience in the evolution of the Atende.net public administration system, working from the back-end to the front-end to ensure performance and scalability. I was responsible for creating innovative and efficient solutions, developing responsive and accessible interfaces, and optimizing the user experience. With a focus on clean and stable code using JavaScript, PHP, and SASS, I actively contributed to the continuous modernization and quality of the product.',
       achievements: [
-
+        'Streamlined usability in municipalities with intuitive interfaces',
+        'Implemented performance improvements that reduced system response time',
+        'Developed Reusable Components',
+        'Increased System Stability',
+        'Custom Dynamic Query for each client',
       ]
     }
   },
   'es-ES': {
     magazord: {
-      description: 'Me especializo en la creación y modernización de plataformas digitales utilizando microfrontends, React.js y Next.js, logrando reducciones significativas de más del 50% en los costos de almacenamiento mediante la optimización de bundles y garantizando experiencias de usuario impecables con sitios 100% responsivos y carga ultrarrápida. Mi especialidad es transformar el rendimiento del sitio, resolver cuellos de botella críticos y desarrollar diseños personalizados que no solo fortalecen la identidad de la marca, sino que también maximizan la conversión e impulsan directamente el aumento de accesos y ventas, todo gestionado con metodologías ágiles para asegurar entregas de alta calidad y dentro de los plazos.',
+      description: 'Desarrollador Frontend con experiencia en e-commerce, enfocado en la arquitectura y desarrollo de componentes microfrontend para optimizar la modularidad del sistema. Actúo en la modernización de sistemas legados, migrándolos a tecnologías como React, Next.js y Tailwind CSS. Mis responsabilidades incluyen la optimización continua del rendimiento, la implementación de diseños responsivos y el análisis de la experiencia de usuario, garantizando la calidad del código con pruebas y prácticas ágiles.',
       job: 'Desarrollador Frontend Intermedio',
       achievements: [
-
+        'Reducción de más del 50% en el tamaño de los bundles JS',
+        'Mejora de más del 30% en el tiempo de carga de la página',
+        'Implementación de Microfrontends para modularidad y escalabilidad',
+        'Migración de sistemas legados a tecnologías modernas como React y Next.js',
+        'Desarrollo de interfaces responsivas y accesibles',
       ]
     },
     ipmSistemas: {
-      description: 'Como Desarrollador Frontend en IPM Sistemas, él actúa directamente en la estructuración y desarrollo del sistema Atende.net, garantizando su escalabilidad y alto rendimiento para la gestión pública. Es responsable de analizar e implementar nuevos desarrollos con soluciones innovadoras y eficientes, creando y manteniendo diseños 100% responsivos y accesibles que proporcionan una experiencia inclusiva y optimizada en cualquier dispositivo. Su experiencia abarca desde el mantenimiento proactivo de código legado, corrigiendo errores y asegurando la estabilidad del sistema, hasta la planificación e investigación de nuevas funcionalidades que impulsan la evolución continua del producto. Desarrolla soluciones Fullstack eficientes utilizando JavaScript Vanilla, SASS, AJAX y PHP, con una fuerte aplicación de Orientación a Objetos, para crear interfaces dinámicas y priorizar una experiencia de usuario superior, impactando directamente la calidad y la usabilidad de las soluciones de IPM Sistemas para la administración pública.',
+      description: 'Desarrollador con experiencia en la evolución del sistema de gestión pública Atende.net, actuando desde el back-end hasta el front-end para garantizar el rendimiento y la escalabilidad. Fui responsable de crear soluciones innovadoras y eficientes, desarrollar interfaces responsivas y accesibles, y optimizar la experiencia de usuario. Con un enfoque en código limpio y estable usando JavaScript, PHP y SASS, contribuí activamente a la modernización y a la calidad continua del producto.',
       job: 'Desarrollador Frontend Junior',
       achievements: [
-
+        'Agilización de la usabilidad en los municipios con interfaces intuitivas',
+        'Implementación de mejoras de rendimiento que redujeron el tiempo de respuesta del sistema',
+        'Desarrollo de Componentes Reutilizables',
+        'Aumento de la Estabilidad del Sistema',
+        'Consulta Dinámica personalizada para cada cliente',
       ]
     }
   },

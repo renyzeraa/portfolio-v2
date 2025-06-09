@@ -15,10 +15,12 @@ export function initCardsExperience(newLanguage) {
 
     const title = document.createElement('h3');
     title.className = 'card-job-title';
+    title.title = newLanguage ? translationsExperience[newLanguage][item.flag].job : item.job;
     title.textContent = newLanguage ? translationsExperience[newLanguage][item.flag].job : item.job;
 
     const description = document.createElement('p');
     description.className = 'card-description';
+    description.title = newLanguage ? translationsExperience[newLanguage][item.flag].description : item.description;
     description.textContent = newLanguage ? translationsExperience[newLanguage][item.flag].description : item.description;
 
     const achievements = document.createElement('div');
@@ -30,6 +32,8 @@ export function initCardsExperience(newLanguage) {
       const achievementItem = document.createElement('div');
       achievementItem.className = 'card-achievement-item';
       achievementItem.textContent = achievement;
+      achievementItem.title = achievement;
+      achievementItem.setAttribute('aria-label', achievement);
       achievements.appendChild(achievementItem);
     })
 
