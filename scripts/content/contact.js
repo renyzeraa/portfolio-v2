@@ -14,10 +14,9 @@ export function initContactArea() {
         email,
         message,
       }
-
+      setLoading(true);
       // simulação de envio de dados
       new Promise((resolve) => {
-        setLoading(true);
         console.log('Enviando dados:', data);
         setTimeout(() => {
           resolve();

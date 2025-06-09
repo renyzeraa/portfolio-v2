@@ -1,9 +1,19 @@
+#contact {
+  padding-bottom: 48px;
+}
+
+#contact .contact-container {
+  position: relative;
+}
+
 #contact .contact-form {
   display: flex;
   flex-direction: column;
   gap: 12px;
   max-width: 600px;
   margin: 48px auto;
+  position: relative;
+  z-index: 2;
 }
 
 #contact .contact-form .form-group {
@@ -117,4 +127,16 @@
 #contact .contact-form .form-textarea.invalid:focus {
   border-color: var(--red);
   box-shadow: 0 0 0 2px var(--shadow-red);
+}
+
+#contact .pattern-contact {
+  position: absolute;
+  top: -85%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100dvw;
+  height: 100dvh;
+  z-index: 1;
+  opacity: 1;
+  pointer-events: none;
 }
