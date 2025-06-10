@@ -3,7 +3,6 @@ export function initContactArea() {
 
   form.addEventListener('submit', function (eventForm) {
     eventForm.preventDefault();
-    setLoading(true);
     const name = validateField('name', 'O campo Nome é obrigatório.');
     const email = validateEmailField();
     const message = validateField('message', 'O campo Mensagem é obrigatório.');
