@@ -1,23 +1,34 @@
 export function initContactArea() {
   const form = document.getElementById('contact-form');
 
-  form.addEventListener('submit', function (event) {
+  form.addEventListener('submit', function (eventForm) {
+    eventForm.preventDefault();
     setLoading(true);
     const name = validateField('name', 'O campo Nome é obrigatório.');
     const email = validateEmailField();
     const message = validateField('message', 'O campo Mensagem é obrigatório.');
 
     if (name && email && message) {
-      // simulação de envio de dados
-      new Promise((resolve) => {
-        setTimeout(() => {
-          resolve();
-          messageSuccess();
-        }, 1500);
-      })
+      const formData = new FormData(eventForm);
 
-      form.reset(); // Limpa o formulário
-      clearAllErrors(); // Limpa todas as mensagens de erro
+      setLoading(true);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          messageSuccess();
+          form.reset();
+          clearAllErrors();
+        })
+        .catch((error) => {
+          alert('Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.');
+        })
+        .finally(() => {
+          setLoading(false);
+        });
     }
   });
 
