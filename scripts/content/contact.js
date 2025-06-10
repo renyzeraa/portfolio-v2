@@ -2,26 +2,18 @@ export function initContactArea() {
   const form = document.getElementById('contact-form');
 
   form.addEventListener('submit', function (event) {
-    event.preventDefault();
-
+    setLoading(true);
     const name = validateField('name', 'O campo Nome é obrigatório.');
     const email = validateEmailField();
     const message = validateField('message', 'O campo Mensagem é obrigatório.');
 
     if (name && email && message) {
-      const data = {
-        name,
-        email,
-        message,
-      }
-      setLoading(true);
       // simulação de envio de dados
       new Promise((resolve) => {
-        console.log('Enviando dados:', data);
         setTimeout(() => {
           resolve();
-          setLoading(false);
-        }, 2000);
+          messageSuccess();
+        }, 1500);
       })
 
       form.reset(); // Limpa o formulário
@@ -98,5 +90,14 @@ export function initContactArea() {
       submitButton.disabled = false;
       submitButton.classList.remove('loading');
     }
+  }
+
+  function messageSuccess() {
+    setLoading(false);
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.classList.add('success');
+    setTimeout(() => {
+      submitButton.classList.remove('success');
+    }, 1200);
   }
 }

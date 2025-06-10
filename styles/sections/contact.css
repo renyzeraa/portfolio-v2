@@ -65,7 +65,7 @@
   font-weight: 500;
   padding: 12px 20px;
   cursor: pointer;
-  transition: filter 0.2s;
+  transition: filter 0.2s, background-color 0.3s;
   text-align: center;
   width: 100%;
   filter: brightness(0.7);
@@ -103,13 +103,20 @@
   right: 50%;
 }
 
-@keyframes spin {
-  from {
-    transform: translateY(-50%) rotate(0deg);
-  }
-  to {
-    transform: translateY(-50%) rotate(360deg);
-  }
+#contact .contact-form .form-button.success {
+  color: transparent;
+  background-color: var(--green);
+  filter: brightness(1);
+}
+
+#contact .contact-form .form-button.success::after {
+  content: '✔';
+  color: var(--text-secondary-50);
+  position: absolute;
+  font-size: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 50%;
 }
 
 #contact .contact-form .error-message {
