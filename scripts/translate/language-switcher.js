@@ -37,7 +37,12 @@ function setLanguage(lang) {
   elements.forEach(element => {
     const key = element.dataset.i18n;
     if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
+      if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement) {
+        element.placeholder = translations[lang][key];
+      }
+      else {
+        element.textContent = translations[lang][key];
+      }
     }
   });
 }
