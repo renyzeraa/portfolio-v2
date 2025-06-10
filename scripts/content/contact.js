@@ -9,7 +9,7 @@ export function initContactArea() {
     const message = validateField('message', 'O campo Mensagem é obrigatório.');
 
     if (name && email && message) {
-      const formData = new FormData(eventForm);
+      const formData = new FormData(form);
 
       setLoading(true);
 
