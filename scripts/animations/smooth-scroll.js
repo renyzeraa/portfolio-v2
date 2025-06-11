@@ -1,7 +1,7 @@
-export function scrollToSection(element, duration = 1000) {
+export function scrollToSection(element, duration = 300) {
   if (!element) return;
 
-  const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+  const targetPosition = element.getBoundingClientRect().top + window.pageYOffset - 80;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime = null;
@@ -46,7 +46,7 @@ export function initSmoothScrollMenu(selector = '.nav-links a', options = {}) {
   });
 }
 
-export function initScrollToTop(buttonSelector, duration = 1000) {
+export function initScrollToTop(buttonSelector, duration = 300) {
   const button = document.querySelector(buttonSelector);
   if (!button) return;
 

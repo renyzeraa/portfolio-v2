@@ -11,11 +11,11 @@
 #experience .experience-card {
   background: linear-gradient(
     155deg,
-    var(--background-primary-900) 0%,
-    var(--background-primary-700) 90%
+    var(--color-primary-1000) 0%,
+    var(--color-primary-1150) 110%
   );
   border-radius: 15px;
-  color: var(--text-white);
+  color: var(--color-gray-50);
   width: 45%;
   box-shadow: 0 4px 15px var(--shadow-dark-20);
   display: flex;
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  background-color: var(--background-white-primary);
+  background-color: var(--color-gray-100);
   max-height: 80px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -88,7 +88,7 @@
 #experience .card-description {
   font-size: 0.9em;
   line-height: 1.6;
-  color: var(--text-secondary-200);
+  color: var(--color-gray-200);
   margin-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
@@ -108,14 +108,13 @@
   padding: 10px 15px;
   margin-bottom: 10px;
   font-size: 0.9em;
-  color: var(--text-secondary-200);
+  color: var(--color-gray-200);
 }
 
 #experience .card-achievement-item:hover {
   background-color: var(--shadow-dark-20);
   border-color: var(--shadow-dark-30);
   box-shadow: 0 2px 10px var(--shadow-dark-30);
-  cursor: help;
 }
 
 #experience .card-achievement-item:last-child {

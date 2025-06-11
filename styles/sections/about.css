@@ -7,7 +7,6 @@
   padding: 1rem;
   line-height: 1;
   margin-bottom: 2rem;
-  animation: floatSpace1 5s ease-in-out infinite;
   position: relative;
 }
 
@@ -20,7 +19,7 @@
 
 #about .about-description > p {
   width: 49%;
-  color: var(--text-secondary-300);
+  color: var(--color-gray-350);
   text-align: justify;
 }
 

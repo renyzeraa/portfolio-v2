@@ -5,9 +5,12 @@ import { initCardsProjects } from './content/cards-projects.js'
 import { initCardsExperience } from './content/cards-experience.js'
 import { initSlideProjects } from './animations/slide.js'
 import { initContactArea } from './content/contact.js'
+import { initHeaderScroll } from './animations/header-scroll.js'
 
 // Inicializa o botão de voltar ao topo com classe show quando o usuário rola a página
 initBackToTop()
+// Evento de scroll para trocar a classe do header quando o usuário rola a página
+initHeaderScroll()
 // Animação do scroll para o topo da página
 initScrollToTop('#scrollToTopButton', 800)
 // Inicializa o menu nav para links com smooth scroll

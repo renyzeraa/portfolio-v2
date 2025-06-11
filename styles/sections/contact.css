@@ -29,10 +29,10 @@
 
 #contact .contact-form .form-input,
 #contact .contact-form .form-textarea {
-  background-color: var(--background-white-primary);
+  background-color: var(--color-gray-100);
   border: 1px solid var(--input);
   border-radius: 8px;
-  color: var(--text-white-primary);
+  color: var(--color-gray-1200);
   font-size: 0.875rem;
   padding: 10px 12px;
   width: 100%;
@@ -42,7 +42,7 @@
 
 #contact .contact-form .form-input::placeholder,
 #contact .contact-form .form-textarea::placeholder {
-  color: var(--text-secondary-600);
+  color: var(--color-gray-600);
 }
 
 #contact .contact-form .form-input:focus,
@@ -58,7 +58,7 @@
 
 #contact .contact-form .form-button {
   background-color: var(--orange);
-  color: var(--text-secondary-50);
+  color: var(--color-gray-50);
   border: none;
   border-radius: 8px;
   font-size: 0.875rem;
@@ -96,7 +96,7 @@
   transform: translate(-50%);
   width: 16px;
   height: 16px;
-  border: 2px solid var(--text-secondary-50);
+  border: 2px solid var(--color-gray-50);
   border-radius: 50%;
   border-right-color: transparent;
   animation: spin 1s linear infinite;
@@ -111,7 +111,7 @@
 
 #contact .contact-form .form-button.success::after {
   content: '✔';
-  color: var(--text-secondary-50);
+  color: var(--color-gray-0);
   position: absolute;
   font-size: 18px;
   top: 50%;

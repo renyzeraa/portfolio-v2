@@ -35,8 +35,8 @@ html {
 body {
   font-family: 'Work Sans', sans-serif;
 
-  background-color: var(--background-primary);
-  color: var(--text-primary);
+  background-color: var(--color-primary-1200);
+  color: var(--color-gray-50);
 
   line-height: 1.5;
   overflow-x: hidden !important;
@@ -56,11 +56,10 @@ body {
 }
 
 .title-content {
-  color: var(--orange);
+  color: var(--color-gray-100);
   text-transform: uppercase;
   font-size: 2.25rem;
   text-align: center;
-  text-shadow: 1px -1px 7px var(--orange);
 }
 
 @media (max-width: 565px) {

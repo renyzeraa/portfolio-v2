@@ -1,18 +1,54 @@
 :root {
-  --background-primary: #000319;
-  --background-primary-900: #020731;
-  --background-primary-800: #181828;
-  --background-primary-700: #2f2f3f;
-  --background-primary-600: #464656;
-  --background-primary-500: #5d5d6e;
-  --background-primary-400: #747485;
-  --background-primary-300: #8c8c9c;
-  --background-primary-200: #a3a3b3;
-  --background-primary-100: #babaca;
-  --background-primary-50: #e5e5f0;
+  --color-gray-0: #ffffff;
+  --color-gray-50: #f5f5f5;
+  --color-gray-100: #ebebeb;
+  --color-gray-150: #e0e0e0;
+  --color-gray-200: #d6d6d6;
+  --color-gray-250: #cccccc;
+  --color-gray-300: #c2c2c2;
+  --color-gray-350: #b8b8b8;
+  --color-gray-400: #adadad;
+  --color-gray-450: #a3a3a3;
+  --color-gray-500: #999999;
+  --color-gray-550: #8f8f8f;
+  --color-gray-600: #858585;
+  --color-gray-650: #7a7a7a;
+  --color-gray-700: #707070;
+  --color-gray-750: #666666;
+  --color-gray-800: #5c5c5c;
+  --color-gray-850: #525252;
+  --color-gray-900: #474747;
+  --color-gray-950: #3d3d3d;
+  --color-gray-1000: #333333;
+  --color-gray-1050: #292929;
+  --color-gray-1100: #1f1f1f;
+  --color-gray-1150: #141414;
+  --color-gray-1200: #0a0a0a;
 
-  --text-white: #fff;
-  --text-primary: #f0f0f0;
+  --color-primary-50: #eceefe;
+  --color-primary-100: #d8ddfd;
+  --color-primary-150: #c5ccfc;
+  --color-primary-200: #b2bafb;
+  --color-primary-250: #9fa9f9;
+  --color-primary-300: #8b98f8;
+  --color-primary-350: #7887f7;
+  --color-primary-400: #6576f6;
+  --color-primary-450: #5165f5;
+  --color-primary-500: #4056f4;
+  --color-primary-550: #2b42f3;
+  --color-primary-600: #1831f2;
+  --color-primary-650: #0d27e7;
+  --color-primary-700: #0c24d4;
+  --color-primary-750: #0b20c1;
+  --color-primary-800: #0a1dae;
+  --color-primary-850: #091a9a;
+  --color-primary-900: #081787;
+  --color-primary-950: #071374;
+  --color-primary-1000: #061060;
+  --color-primary-1050: #040d4d;
+  --color-primary-1100: #030a3a;
+  --color-primary-1150: #020627;
+  --color-primary-1200: #010313;
 
   --shadow-05: rgba(255, 255, 255, 0.05);
   --shadow-10: rgba(255, 255, 255, 0.1);
@@ -22,30 +58,12 @@
   --shadow-dark-10: rgba(0, 0, 0, 0.1);
   --shadow-dark-20: rgba(0, 0, 0, 0.2);
 
-  --text-secondary-50: #f5f7fa;
-  --text-secondary-100: #e4eaf1;
-  --text-secondary-200: #c9d4e3;
-  --text-secondary-300: #aebed5;
-  --text-secondary-400: #93a8c7;
-  --text-secondary-500: #7892b9;
-  --text-secondary-600: #5e7697;
-  --text-secondary-700: #485b73;
-  --text-secondary-800: #333f4f;
-  --text-secondary-900: #1f242d;
-
-  --text-purple-200: #9a9aff;
-
-  --background-white-primary: #f0f0f0;
-  --text-white-primary: #000319;
-
   --orange: #d14329;
   --red: #e7453c;
   --red-ipm-sistemas: #e7453c;
   --green: #2ecc71;
 
   --shadow-red: hsla(0, 84.2%, 60.2%, 0.4);
-
-  --gradient-hover: linear-gradient(45deg, #1b2555, #202c63, #131b41, #28387f);
 
   --input: hsl(214.3, 31.8%, 91.4%);
   --border: hsl(214.3, 31.8%, 91.4%);
