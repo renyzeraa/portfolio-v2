@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  color: #ff5c00;
+  color: var(--color-primary-600);
   border: none;
   border-radius: 50%;
   width: 36px;

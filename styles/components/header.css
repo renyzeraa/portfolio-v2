@@ -153,8 +153,8 @@
     transition: color 0.3s ease;
   }
 
-  #menuToggle a:hover {
-    color: var(--orange);
+  #menuToggle li:hover a {
+    animation: none;
   }
 
   #menuToggle input {

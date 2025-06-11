@@ -132,7 +132,7 @@
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background: var(--color-primary-700);
+  background: var(--color-gray-900);
   border: 1px solid var(--color-gray-200);
   padding: 8px;
   display: flex;
@@ -194,6 +194,10 @@
   }
   #projects .cards-container .card .card-img {
     padding: 0px;
+    border-radius: 10px;
+  }
+  #projects .cards-container .card a {
+    color: var(--color-gray-100);
   }
   #projects .cards-container .image-project {
     filter: grayscale(0);
