@@ -62,6 +62,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .main-content section {
+    padding: 24px 12px;
+  }
+}
+
 @media (max-width: 565px) {
   .main-content {
     margin: 32px 0 16px;

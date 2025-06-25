@@ -6,7 +6,7 @@ export const projects = [
     title: 'FoodExplorer',
     description: translationsProjects[getLanguage()][0].description,
     image: 'https://github.com/user-attachments/assets/872a5987-2352-4032-a2d5-fbd59fc684f1',
-    libs: ['react', 'javascript', 'node', 'express', 'sqlite', 'knex', 'vite'],
+    libs: ['react', 'javascript', 'node', 'sqlite', 'knex', 'vite'],
     linkSite: 'https://foodexplorer-eight.vercel.app/',
     linkRepo: 'https://github.com/renyzeraa/foodexplorer-frontend'
   },
@@ -14,7 +14,7 @@ export const projects = [
     title: 'Achieve Goals',
     description: translationsProjects[getLanguage()][1].description,
     image: 'https://github.com/user-attachments/assets/582229a8-d763-4e42-bcfe-8745d9a33cc9',
-    libs: ['react', 'typescript', 'node', 'tailwind', 'vite', 'fastify', 'prisma', 'postgresql', 'docker'],
+    libs: ['react', 'typescript', 'node', 'tailwind', 'prisma', 'postgresql', 'docker'],
     linkSite: 'https://github.com/renyzeraa/achieve-goals-front',
     linkRepo: 'https://github.com/renyzeraa/achieve-goals-front'
   },
@@ -38,7 +38,7 @@ export const projects = [
     title: 'Rocket Notes',
     description: translationsProjects[getLanguage()][4].description,
     image: 'https://user-images.githubusercontent.com/101990719/186683798-b81a6403-07f5-4875-b88e-90595da46636.png',
-    libs: ['react', 'javascript', 'css', 'vite', 'node', 'express', 'sqlite', 'knex'],
+    libs: ['react', 'javascript', 'css', 'vite', 'node', 'sqlite', 'knex'],
     linkSite: 'https://rocket-notes-aplication.netlify.app/',
     linkRepo: 'https://github.com/renyzeraa/rocketnotes-frontend'
   },
@@ -56,7 +56,6 @@ export const libsIcons = {
   'react': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
   'javascript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
   'node': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
-  'express': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
   'sqlite': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg',
   'vite': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
   'tailwind': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
@@ -64,7 +63,6 @@ export const libsIcons = {
   'prisma': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
   'docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg',
   'postgresql': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
-  'fastify': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastify/fastify-original.svg',
   'knex': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/knexjs/knexjs-original.svg',
   'next': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
   'html': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',

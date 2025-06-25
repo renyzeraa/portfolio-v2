@@ -128,11 +128,17 @@
   }
 
   #experience .experience-card {
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
   }
 
   #experience .card-description {
     height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #experience .card-description {
+    font-size: 0.8rem;
   }
 }

@@ -248,3 +248,17 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 500px) {
+  .header .language-selector > span {
+    display: none;
+  }
+
+  .header .logo svg {
+    height: 28px;
+    width: 175px;
+  }
+  .header .logo svg text {
+    font-size: 18px;
+  }
+}

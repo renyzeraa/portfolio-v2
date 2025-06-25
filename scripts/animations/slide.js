@@ -46,7 +46,12 @@ export function initSlideProjects() {
       index = 0;
     }
 
-    const offset = -index * carouselState.totalSlideWidth;
+    let lessWidth = 0;
+    if (window.innerWidth > 500) {
+      lessWidth = 120; // Adjust this value as needed for larger screens
+    }
+
+    const offset = -index * (carouselState.totalSlideWidth - lessWidth);
     carouselState.slide.style.transform = `translateX(${offset}px)`;
     carouselState.currentIndex = index;
   }

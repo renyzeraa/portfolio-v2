@@ -21,13 +21,12 @@
 
 #projects .cards-container .card {
   background: linear-gradient(
-    325deg,
-    var(--color-primary-1050) 0%,
-    var(--color-primary-1050) 120%
+    155deg,
+    var(--color-primary-1000) 0%,
+    var(--color-primary-1150) 110%
   );
   border-radius: 20px;
   width: 340px;
-  height: 100%;
   max-height: 550px;
   padding: 20px;
   display: flex;
@@ -49,7 +48,7 @@
   max-height: 210px;
   overflow: hidden;
   transition: padding 0.3s;
-  background-color: var(--color-gray-1050);
+  background-color: var(--color-gray-950);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -63,6 +62,7 @@
   max-width: 100%;
   border-radius: 10px;
   transition: transform 0.3s;
+  object-fit: cover;
 }
 
 #projects .cards-container .image-project {
@@ -202,5 +202,18 @@
   #projects .cards-container .image-project {
     filter: grayscale(0);
     transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 500px) {
+  #projects .cards-container .slide {
+    margin-left: 55px;
+  }
+  #projects .cards-container .slide .card {
+    width: 255px;
+  }
+
+  #projects .cards-container .card .card-img {
+    max-height: 160px;
   }
 }
