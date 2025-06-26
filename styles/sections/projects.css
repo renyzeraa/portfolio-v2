@@ -26,7 +26,8 @@
     var(--color-primary-1150) 110%
   );
   border-radius: 20px;
-  width: 340px;
+  width: 100%;
+    flex: 1 0 25%;
   max-height: 550px;
   padding: 20px;
   display: flex;
@@ -165,6 +166,12 @@
   background-color: var(--color-primary-1000);
 }
 
+@media (max-width: 895px) {
+  #projects .cards-container .card {
+    flex: 1 0 35%;
+  }
+}
+
 @media (max-width: 814px) {
   #projects .cards-container .arrow-nav {
     opacity: 1;
@@ -184,6 +191,7 @@
   }
 
   #projects .cards-container .slide .card {
+    flex: none;
     flex-shrink: 0;
     width: 320px;
   }
