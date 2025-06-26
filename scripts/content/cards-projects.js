@@ -20,8 +20,8 @@ export function initCardsProjects(newLanguage) {
     img.className = 'image-project';
     img.src = project.image;
     img.alt = 'Preview Site';
-    img.width = 307;
-    img.height = 211;
+    img.width = 350;
+    img.height = 225;
     img.draggable = false;
     cardImg.appendChild(img);
 
