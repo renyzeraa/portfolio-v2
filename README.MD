@@ -1,46 +1,46 @@
-## 🚀 My Professional Portfolio
+## 🚀 Meu Portfólio Profissional
 
-A modern, dynamic portfolio showcasing my journey as a developer. Built with cutting-edge technologies to demonstrate my skills and projects.
+Um portfólio moderno e dinâmico que apresenta minha jornada como desenvolvedor. Construído com tecnologias de ponta para demonstrar minhas habilidades e projetos.
 
-### ⚡ Tech Stack
+### ⚡ Tecnologias Utilizadas
 
 - HTML
 - CSS
 - Javascript
 
-### 🌟 Features
+### 🌟 Funcionalidades
 
-- Responsive design
-- Smooth animations
-- Interactive project showcase
-- Performance optimized
-- SEO friendly
+- Design responsivo
+- Animações suaves
+- Exibição interativa de projetos
+- Otimizado para performance
+- Amigável para SEO
 
-### 🎯 Purpose
+### 🎯 Propósito
 
-This portfolio serves as a creative platform to:
+Este portfólio serve como uma plataforma criativa para:
 
-- Showcase my technical expertise
-- Display my latest projects
-- Share my professional journey
-- Connect with other developers
-- Demonstrate my coding style
+- Mostrar minha expertise técnica
+- Exibir meus projetos mais recentes
+- Compartilhar minha trajetória profissional
+- Conectar-me com outros desenvolvedores
+- Demonstrar meu estilo de codificação
 
 ### 💻 Deploy
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c94cdc90-0725-4a20-8a8c-57666844fd3e/deploy-status)](https://app.netlify.com/projects/renansilvadev/deploys)
 
-<h3><a href="https://renansilvadev.netlify.app/" target="_blanck">Check live</a></h3>
+<h3><a href="https://renansilvadev.netlify.app/" target="_blanck">Ver site</a></h3>
 
 ---
 
 ### 📫 Contact
 
-If you have any questions or suggestions, feel free to reach out and contribute!
+Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato e contribuir!
 
 <img align="left" src="https://avatars.githubusercontent.com/renyzeraa?size=100">
 
-Made for [Renan L. Silva](https://github.com/renyzeraa)! <br>
+Feito por [Renan L. Silva](https://github.com/renyzeraa)! <br>
 🛠 Dev. Frontend <br>
 📍 Santa Catarina - Brazil <br>
 
