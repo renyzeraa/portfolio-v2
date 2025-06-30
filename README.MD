@@ -30,7 +30,7 @@ This portfolio serves as a creative platform to:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c94cdc90-0725-4a20-8a8c-57666844fd3e/deploy-status)](https://app.netlify.com/projects/renansilvadev/deploys)
 
-<h4><a href="https://renansilvadev.netlify.app/" target="_blanck">Check live</a></h4>
+<h3><a href="https://renansilvadev.netlify.app/" target="_blanck">Check live</a></h3>
 
 ---
 
